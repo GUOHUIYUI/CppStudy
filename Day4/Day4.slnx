@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_const对象/01_const对象.vcxproj" Id="ba5680f9-80b3-4a4e-84cc-202258d274f9" />
+  <Project Path="02_指向常量的指针/02_指向常量的指针.vcxproj" Id="eb06d6c1-c07b-4c44-9c7e-270d92f27788" />
+  <Project Path="03_常量指针/03_常量指针.vcxproj" Id="a6ef3040-9b4e-4fad-b954-a0a0b98f44b8" />
+  <Project Path="04_const引用/04_const引用.vcxproj" Id="75af4afb-af16-4cb0-a547-3f25baf47e5a" />
+  <Project Path="05_const只读引用参数/05_const只读引用参数.vcxproj" Id="24dac885-a844-4f1f-8bb6-42cd542f310a" />
+  <Project Path="06_只读查询与可修改操作/06_只读查询与可修改操作.vcxproj" Id="aec34148-7add-4d90-9b87-02e79b228f89" />
+  <Project Path="07_const与生命周期/07_const与生命周期.vcxproj" Id="7ccf7df5-b4e2-4f21-a58c-1f85ef71a431" />
+  <Project Path="08_代码题_只读数组统计/08_代码题_只读数组统计.vcxproj" Id="bfdca819-60d4-4a01-8308-6390bc9a1fce" />
+  <Project Path="09_代码题_矩形接口设计/09_代码题_矩形接口设计.vcxproj" Id="2cb388fa-180e-48d4-89ba-2fa9c74f4dd5" />
+  <Project Path="10_LeetCode_121_Best_Time_to_Buy_and_Sell_Stock/10_LeetCode_121_Best_Time_to_Buy_and_Sell_Stock.vcxproj" Id="2faec488-5189-486e-91ac-34a8a8a20254" />
+</Solution>

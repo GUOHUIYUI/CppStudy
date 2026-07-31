@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_对象与列表初始化/01_对象与列表初始化.vcxproj" Id="c9e0c85d-2bb2-43ce-9abb-4522361c663b" />
+  <Project Path="02_初始化与赋值/02_初始化与赋值.vcxproj" Id="9666435d-aa0f-4d34-ac33-a785fd303bed" />
+  <Project Path="03_列表初始化与窄化/03_列表初始化与窄化.vcxproj" Id="b5c5e99d-9f32-4a25-aab9-2f58600c02e1" />
+  <Project Path="04_auto类型推导/04_auto类型推导.vcxproj" Id="4771a176-2e0c-4e99-a352-9d8e7b4a1abd" />
+  <Project Path="05_decltype类型推导/05_decltype类型推导.vcxproj" Id="f331e507-161e-4fb3-be75-785aea90c642" />
+  <Project Path="06_类型与初始化综合示例/06_类型与初始化综合示例.vcxproj" Id="a1b90694-ad41-4739-84fa-b4347398d145" />
+  <Project Path="07_代码题_订单结算器/07_代码题_订单结算器.vcxproj" Id="37a818c8-cf41-4e5b-8aa9-eb616a65c091" />
+  <Project Path="08_代码题_总秒数分解器/08_代码题_总秒数分解器.vcxproj" Id="88125eb2-b37f-4581-b4fd-5fb5b2a463e9" />
+  <Project Path="09_LeetCode_20_Valid_Parentheses/09_LeetCode_20_Valid_Parentheses.vcxproj" Id="086a1f04-af24-41c1-bd65-b1a8efaef9ba" />
+</Solution>
