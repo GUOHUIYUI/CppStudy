@@ -1,0 +1,178 @@
+# Visual Studio 用户配置
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.VC.db-shm
+*.VC.db-wal
+*.opendb
+*.opensdf
+*.sdf
+
+# Visual Studio 临时文件
+
+.vscode/
+ipch/
+*.ipch
+*.aps
+*.ncb
+*.cachefile
+*.VC.VC.opendb
+
+# 编译输出目录
+
+Debug/
+Release/
+x64/
+x86/
+Win32/
+ARM/
+ARM64/
+
+# 常见自定义构建目录
+
+build/
+Build/
+out/
+bin/
+obj/
+cmake-build-*/
+CMakeFiles/
+
+# 中间编译文件
+
+*.obj
+*.o
+*.lo
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.log
+*.tmp
+*.temp
+
+# 可执行文件和动态库
+
+*.exe
+*.dll
+*.app
+*.out
+
+# 静态库和导入库
+
+*.lib
+*.a
+*.la
+
+# Visual Studio 构建目录
+
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# 测试结果
+
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# CMake 生成文件
+
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+compile_commands.json
+install_manifest.txt
+
+# NuGet 包
+
+packages/
+*.nupkg
+*.snupkg
+
+# Windows 系统文件
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS 系统文件
+
+.DS_Store
+
+# Linux 临时文件
+
+*~
+.directory
+
+# 编辑器临时文件
+
+*.swp
+*.swo
+*.bak
+*.orig
+
+# 崩溃转储和调试文件
+
+*.dmp
+*.mdmp
+
+# 性能分析文件
+
+*.vsp
+*.vspx
+*.sap
+
+# 自动生成文件
+
+Generated Files/
+GeneratedFiles/
+
+# Qt 构建文件（如果项目使用 Qt）
+
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.pro.user
+*.pro.user.*
+.qmake.stash
+Makefile.Debug
+Makefile.Release
+debug/
+release/
+
+# OpenCV 或第三方库本地目录
+
+third_party/build/
+third_party/bin/
+third_party/lib/
+
+# 本地环境和配置
+
+.env
+.env.*
+!.env.example
+local/
+config.local.*
+
+# 不忽略 Visual Studio 解决方案和项目配置
+
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user.example
+!CMakeLists.txt
