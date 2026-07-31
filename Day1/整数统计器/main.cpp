@@ -7,7 +7,7 @@ int main()
 	double average{};
 	int num_count{};
 	std::cout << "请输入整数的个数:";
-	if (!(std::cin >> num_count))
+	if (!(std::cin >> num_count) || num_count <= 0 || num_count > 100)
 	{
 		std::cerr << "输入不是有效整数！" << std::endl;
 		return 1;
@@ -18,7 +18,7 @@ int main()
 		std::cout << "请输入第" << (i + 1) << "个整数:";
 		if (!(std::cin >> num))
 		{
-			std::cerr << "输入" << i << "个不是有效整数！" << std::endl;
+			std::cerr << "输入" << i + 1 << "个不是有效整数！" << std::endl;
 			return 1;
 		}
 		if (i == 0)
@@ -45,7 +45,7 @@ int main()
 	std::cout << "总和: " << sum << std::endl;
 	std::cout << "平均值: " << average << std::endl;
 
-	
+
 
 
 	return 0;

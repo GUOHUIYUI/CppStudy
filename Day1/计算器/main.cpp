@@ -10,6 +10,7 @@ int main()
 	if (!(std::cin >> num1))
 	{
 		std::cerr << "输入不是有效数字！" << std::endl;
+		return 1;
 	}
 	std::cout << "请输入运算符(+,-,*,/):";
 	if (!(std::cin >> operation) || (operation != '+' && operation != '-' && operation != '*' && operation != '/'))

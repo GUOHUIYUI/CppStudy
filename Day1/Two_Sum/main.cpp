@@ -53,7 +53,7 @@ public:
             //for (int j = i;j < (static_cast<int>(nums.size()));j++)
 			for (int j = i + 1;j < (static_cast<int>(nums.size()));j++) //j从i+1开始 避免重复计算
             {
-				if (nums[i] + nums[j] == target && i != j)
+				if (nums[i] + nums[j] == target )
 				{
 					return { i,j };
 				}
