@@ -4,5 +4,10 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="iostream和输入输出/iostream和输入输出.vcxproj" Id="54a27b0e-223e-4380-86b1-e97ce8cfa162" />
+  <Project Path="Two_Sum/Two_Sum.vcxproj" Id="98537b83-bad4-48f0-b996-537337b6a7bc" />
+  <Project Path="使用cin读取输入/使用cin读取输入.vcxproj" Id="ba182ff2-1017-4562-98ea-e66f2571feb2" />
   <Project Path="命名空间/命名空间.vcxproj" Id="f4587ea6-8377-4b96-9a97-450fde008a8e" />
+  <Project Path="整数统计器/整数统计器.vcxproj" Id="38c624b7-00f3-4007-bce0-420a50178120" />
+  <Project Path="简单温度转换器/简单温度转换器.vcxproj" Id="77678394-257e-44fc-90f6-738f96112675" />
+  <Project Path="计算器/计算器.vcxproj" Id="3d43ca6c-da94-4d0a-bb5f-df15425f0640" />
 </Solution>
