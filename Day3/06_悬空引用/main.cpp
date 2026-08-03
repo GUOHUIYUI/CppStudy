@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 
 /*
@@ -11,7 +11,7 @@
 int& broken()
 {
     int x{};
-	int ref = x; // ref是x的引用
+	int& ref = x; // ref是x的引用
     return ref;
 }
 
