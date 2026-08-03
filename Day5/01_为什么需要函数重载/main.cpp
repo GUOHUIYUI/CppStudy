@@ -11,7 +11,7 @@ int maximum(int x, int y)
     return x > y ? x : y;
 }
 
-double maximun(double x, double y)
+double maximum(double x, double y)
 {
     return x > y ? x : y;
 }

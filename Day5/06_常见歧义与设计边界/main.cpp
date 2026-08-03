@@ -18,7 +18,7 @@
 //默认参数与重载冲突
 void print(int a)
 {
-	std::cout << abort << std::endl;
+	std::cout << a << std::endl;
 }
 
 void print(int a, int b = 10)
