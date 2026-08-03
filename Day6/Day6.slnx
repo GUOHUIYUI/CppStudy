@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_主动回忆与练习范围/01_主动回忆与练习范围.vcxproj" Id="72e7537f-368f-43a6-994d-9304478dd08d" />
+  <Project Path="02_标定模型与数据规则/02_标定模型与数据规则.vcxproj" Id="a2cd9e49-e67a-4ef8-bb1d-25096cd0dc4e" />
+  <Project Path="03_输入校验固定模板/03_输入校验固定模板.vcxproj" Id="f92e9343-459b-4959-8365-d0c01e57fd1d" />
+  <Project Path="04_引用与const接口方向/04_引用与const接口方向.vcxproj" Id="c03c9f0d-7b84-44b5-99ba-f390c1535a65" />
+  <Project Path="05_重载与默认参数设计/05_重载与默认参数设计.vcxproj" Id="ba4c8298-149b-4a1a-9a11-f5d83cbee68b" />
+  <Project Path="06_测试设计与验收/06_测试设计与验收.vcxproj" Id="54e452f5-0564-4dc0-85c7-e9bdb25f3d69" />
+  <Project Path="07_代码题_标定函数组/07_代码题_标定函数组.vcxproj" Id="f07a273c-9122-4c35-9df5-524b070660b2" />
+  <Project Path="08_代码题_命令行传感器标定工具/08_代码题_命令行传感器标定工具.vcxproj" Id="12475734-ca85-41b8-8854-6fdc51eac969" />
+  <Project Path="09_LeetCode_217_Contains_Duplicate/09_LeetCode_217_Contains_Duplicate.vcxproj" Id="1c3011b9-ba6c-4d33-9673-e3e9ddad3dc4" />
+</Solution>
