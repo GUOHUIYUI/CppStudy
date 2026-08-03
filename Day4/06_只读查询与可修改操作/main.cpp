@@ -1,9 +1,9 @@
-#include<iostream>
+﻿#include<iostream>
 
 struct Rectangle
 {
-	int length;
-	int width;
+	double length;
+	double width;
 };
 //从参数看 area不会修改矩形对象本身
 double area(const Rectangle& rect)
