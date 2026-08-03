@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_为什么需要函数重载/01_为什么需要函数重载.vcxproj" Id="a140d27b-1c52-42bd-8e43-3f598bb90230" />
+  <Project Path="02_重载规则与解析/02_重载规则与解析.vcxproj" Id="c32686ce-2f14-430d-9958-dacb14030d07" />
+  <Project Path="03_默认参数/03_默认参数.vcxproj" Id="7f5ddd63-a63e-48cc-a6b9-e0c7c0107cd5" />
+  <Project Path="04_inline函数/04_inline函数.vcxproj" Id="6f7e3355-3bca-45b1-8459-7c1c8749564c" />
+  <Project Path="05_constexpr函数与static_assert/05_constexpr函数与static_assert.vcxproj" Id="608cb35d-98e0-4537-810e-6c70ccdc5926" />
+  <Project Path="06_常见歧义与设计边界/06_常见歧义与设计边界.vcxproj" Id="fe2cf3a2-5e3e-4b09-9b9f-3f279af8dde1" />
+  <Project Path="07_代码题_重载数学工具库/07_代码题_重载数学工具库.vcxproj" Id="fdba2427-4065-4484-814e-0ace9f52c9aa" />
+  <Project Path="08_代码题_订单价格函数/08_代码题_订单价格函数.vcxproj" Id="f0756d1e-386d-4f33-ba82-ddb88c6872e8" />
+  <Project Path="09_LeetCode_242_Valid_Anagram/09_LeetCode_242_Valid_Anagram.vcxproj" Id="a8332973-7dd3-4837-928a-bc5bac774733" />
+</Solution>
