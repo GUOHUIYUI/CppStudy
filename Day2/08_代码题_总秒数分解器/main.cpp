@@ -1,4 +1,4 @@
-#include<windows.h>
+﻿#include<windows.h>
 #include<iostream>
 
 
@@ -12,6 +12,7 @@
 - 使用列表初始化；
 - 使用`decltype`声明至少一个与总秒数类型相同的变量。
 */
+
 
 
 int main()
