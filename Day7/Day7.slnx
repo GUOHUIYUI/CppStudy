@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_主动回忆检查/01_主动回忆检查.vcxproj" Id="7d247553-0dbb-4718-a79c-671007c3e7c5" />
+  <Project Path="02_识别能编译但不正确/02_识别能编译但不正确.vcxproj" Id="61dc3e38-1cba-4ff6-9fa1-59f74f7937e2" />
+  <Project Path="03_无提示重写核心接口/03_无提示重写核心接口.vcxproj" Id="dc15cb92-0fbc-469e-85b0-fcd28211ed57" />
+  <Project Path="04_Week1周测/04_Week1周测.vcxproj" Id="6d1db5a7-686f-41cd-af07-dc3289d22e94" />
+  <Project Path="05_错题与警告记录/05_错题与警告记录.vcxproj" Id="18c3a833-7597-4b3a-b3f9-a6efd07c4f0c" />
+  <Project Path="06_代码题_修复失真的测试器/06_代码题_修复失真的测试器.vcxproj" Id="2d8808fc-aa28-4c62-84b8-b1cce018b155" />
+  <Project Path="07_代码题_安全换算接口/07_代码题_安全换算接口.vcxproj" Id="bff7a7fb-1d28-45fa-adda-cb04161523c8" />
+  <Project Path="08_LeetCode_283_Move_Zeroes/08_LeetCode_283_Move_Zeroes.vcxproj" Id="41aff641-15e4-49d2-b94f-313bba186ba4" />
+</Solution>
