@@ -26,10 +26,10 @@
         std::unordered_set<int> set 定义一个哈希集合
         set.count(num) 存在时返回1，不存在返回0
         set.insert(num) 插入集合
-
-         for (int values:nums)增强for循环
+        
+         for (int values:nums)增强for循环  values为数组中的元素不是下标
         {
-            if(set.count(nums[values]))
+            if(set.count(values))
             {
                 return true;
             }
@@ -43,11 +43,11 @@ public:
         std::unordered_set<int> set;
         for (int values:nums)
         {
-            if(set.count(nums[values]))
+            if(set.count(values))
             {
                 return true;
             }
-            set.insert(nums[values]);
+            set.insert(values);
         }
         return false;
 

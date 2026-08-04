@@ -4,26 +4,23 @@
 #include <string>
 #include <vector>
 
-constexpr  bool isCalibrationValid(double rawValue, double scale, double offset)
+constexpr  int isCalibrationValid(double rawValue, double scale, double offset)
 {
-	bool flag{ true };
+	int num{};
 	if (rawValue < -100000 || rawValue>100000)
 	{
-		std::cout << "rawValue ERROR" << std::endl;
-		flag = false;
+		num |= 1 << 0;
 	}
-	if (scale <= 0 || scale>1000)
+	if (scale <= 0 || scale > 1000)
 	{
-		std::cout << "scale ERROR" << std::endl;
-		flag = false;
+		num |= 1 << 1;
 	}
 	if (offset < -100000 || offset>100000)
 	{
-		std::cout << "offset ERROR" << std::endl;
-		flag = false;
+		num |= 1 << 2;
 	}
 
-	return  flag;
+	return  num;
 }
 
 constexpr double applyCalibration(double rawValue, double scale, double offset = 0.0)
@@ -38,8 +35,21 @@ bool calibrate(
 	double &calibratedValue
 )
 {
-	if (!isCalibrationValid(rawValue, scale, offset))
+	int num = isCalibrationValid(rawValue, scale, offset);
+	if (!(num == 0))
 	{
+		if (num & 1 << 0)
+		{
+			std::cerr << "rawValue error" << std::endl;
+		}
+		if (num & 1 << 1)
+		{
+			std::cerr << "scale error" << std::endl;
+		}
+		if (num & 1 << 2)
+		{
+			std::cerr << "offset error" << std::endl;
+		}
 		return false;
 	}
 	calibratedValue = applyCalibration(rawValue, scale, offset);
@@ -59,9 +69,9 @@ bool inputFunc(double &rawValue, double &scale, double &offset)
 {
 	if (!(std::cin >> rawValue >> scale >> offset))
 	{
-		std::cerr << "input ERROR"<<std::endl;
+		std::cerr << "input ERROR" << std::endl;
 		std::cin.clear();
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		return false;
 	}
 	return true;
@@ -77,7 +87,7 @@ void check(double &rawValue, double &scale, double &offset, double &calibratedVa
 	{
 		return;
 	}
-	
+
 	std::cout << "rawValue:" << rawValue << "scale:" << scale << "offset:" << offset << "calibratedValue:" << calibratedValue << std::endl;
 
 }
@@ -86,6 +96,6 @@ int main()
 {
 	double rawValue{}, scale{}, offset{}, calibratedValue{};
 	check(rawValue, scale, offset, calibratedValue);
-	
+
 	return 0;
 }

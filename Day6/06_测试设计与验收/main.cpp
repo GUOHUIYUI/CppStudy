@@ -1,4 +1,4 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <iostream>
 #include <limits>
 #include <string>
@@ -26,9 +26,9 @@ constexpr double applyCalculate(double rawValue, double scale, double offset = 0
 	return rawValue * scale + offset;
 }
 
-void checkEqual(bool isValid)
+void checkEqual(bool expect,bool actual)
 {
-	if (isValid)
+	if (expect== actual)
 	{
 		std::cout << "PASS" << std::endl;
 		
@@ -36,20 +36,17 @@ void checkEqual(bool isValid)
 	{
         std::cout << "FAIL" << std::endl;
     }
-
-
-
 }
 
 int main()
 {
-	checkEqual(isValid(100, 0.5, 2));
-	checkEqual(isValid(0, 1, 0));
-	checkEqual(isValid(-100000, 1, 0));
-	checkEqual(isValid(100000, 1, 0));
-	checkEqual(isValid(100001, 1, 0));
-	checkEqual(isValid(100, 0, 0));
-	checkEqual(isValid(100, 100, -100000));
+	checkEqual(true,isValid(100, 0.5, 2));
+	checkEqual(true,isValid(0, 1, 0));
+	checkEqual(true,isValid(-100000, 1, 0));
+	checkEqual(true,isValid(100000, 1, 0));
+	checkEqual(false,isValid(100001, 1, 0));
+	checkEqual(false,isValid(100, 0, 0));
+	checkEqual(true,isValid(100, 100, -100000));
 	//checkEqual(isValid(100, 0.5, 0));
     return 0;
 }

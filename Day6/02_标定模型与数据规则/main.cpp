@@ -1,4 +1,4 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <iostream>
 #include <limits>
 #include <string>
@@ -6,7 +6,7 @@
 
 inline bool isValid(double rawValue, double scale, double offset)
 {
-    return (rawValue<-100000||rawValue>100000||scale<0||scale>1000||offset<-100000||offset>100000) ? false:true;
+    return (rawValue<-100000||rawValue>100000||scale<=0||scale>1000||offset<-100000||offset>100000) ? false:true;
 }
 
 constexpr double applyCalculate(double rawValue, double scale, double offset = 0.0)
