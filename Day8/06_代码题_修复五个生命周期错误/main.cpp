@@ -51,15 +51,15 @@ int process2()
 	int num{ 1 };
 	return num;
 }
-void process3(int num)
+void process3(int& num)
 {
 	num = 3;
 }
 
-void process4()
+int process4()
 {
 	int num{};
-	std::cout << num << std::endl;
+	return num;
 }
 
 void process5(int &num)
@@ -70,10 +70,42 @@ void process5(int &num)
 	num = num1;
 }
 
+void check(const std::string &str, int expect, int actual)
+{
+	std::cout
+		<< str
+		<< " | actual=" << actual
+		<< " expected=" << expect
+		<< (actual == expect ? " | PASS\n" : " | FAIL\n");
+}
 
 
 
 int main()
 {
+	//原错误：返回局部引用
+	int num{ process1() };
+    check("process1", 1, num);
+
+	//原错误：返回局部对象指针
+	num = process2();
+    check("process2", 1, num);
+
+	//原错误：局部变量遮蔽
+    process3(num);
+    check("process3", 3, num);
+
+	//原错误：访问未初始化变量
+    num=process4();
+    check("process4", 0, num);
+
+    //原错误：static局部变量
+	num = 0;
+    process5(num);
+    check("process5", 3, num);
+	num = 0;
+	process5(num);
+	check("process5", 3, num);
+
 	return 0;
 }

@@ -24,13 +24,14 @@ int main()
 bool recordSample(int sample, int &latest, int &callCount)
 {
     static int success{};
-    callCount = nextPacketSequence();
+    
     if (sample > 4095 || sample < 0)
     {
         std::cout << "FAIL  " << "latest:  " << latest << "success:  " << success << "callCount:  " << callCount << "\n";
         return false;
     }
     success++;
+    callCount = nextPacketSequence();
     latest = sample;
     std::cout << "PASS  " << "latest:  " << latest << "success:  " << success << "callCount:  " << callCount << "\n";
     return true;
@@ -38,5 +39,5 @@ bool recordSample(int sample, int &latest, int &callCount)
 int nextPacketSequence()
 {
     static int  count{};
-   return  count++;
+   return  ++count;
 }
