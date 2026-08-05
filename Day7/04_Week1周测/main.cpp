@@ -11,7 +11,9 @@ bool readDouble(double &output)
     {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        return false;
     }
+    return true;
 }
 
 //2.交换两个int的引用函数:不用返回是因为可以通过引用直接修改原对象的值

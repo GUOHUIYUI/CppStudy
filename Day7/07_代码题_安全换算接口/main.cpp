@@ -1,4 +1,4 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <iostream>
 #include <limits>
 #include <string>
@@ -7,7 +7,7 @@
 
 constexpr bool isCelsiusValid(double celsius)
 {
-    return celsius < -273.14 ? false : true;
+    return celsius < -273.15 ? false : true;
 }
 constexpr double celsiusToFahrenheit(double celsius)
 {
@@ -39,7 +39,7 @@ int main()
    
     check(-300, actual);
     check(0, actual);
-    check(-273.14, actual);
+    check(-273.15, actual);
     check(100, actual);
     check(200, actual);
     return 0;
