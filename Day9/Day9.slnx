@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_指针与nullptr/01_指针与nullptr.vcxproj" Id="de500681-a0e1-4254-bd2c-c4498278c0f7" />
+  <Project Path="02_指针和引用的接口语义/02_指针和引用的接口语义.vcxproj" Id="c2bfe80c-d4e6-4983-898d-dec25acb9e53" />
+  <Project Path="03_const指针与只读访问/03_const指针与只读访问.vcxproj" Id="8128e350-ef99-4f04-86a7-9becf9cdddb6" />
+  <Project Path="04_可选设备句柄接口/04_可选设备句柄接口.vcxproj" Id="a97ff2bb-d071-4678-87a3-047b4a20c412" />
+  <Project Path="05_悬空与所有权边界/05_悬空与所有权边界.vcxproj" Id="64066bb2-9407-4a76-990f-39041c6198f3" />
+  <Project Path="06_代码题_重构可选设备句柄/06_代码题_重构可选设备句柄.vcxproj" Id="5c640b38-197f-4693-bbf2-b7b5a16893bc" />
+  <Project Path="07_代码题_主备设备选择器/07_代码题_主备设备选择器.vcxproj" Id="bf721c73-1bd4-4c81-9f5b-b6bbf24d373c" />
+  <Project Path="08_LeetCode_35_Search_Insert_Position/08_LeetCode_35_Search_Insert_Position.vcxproj" Id="f040a575-56e8-4ad1-8e53-130ab1afead0" />
+</Solution>
