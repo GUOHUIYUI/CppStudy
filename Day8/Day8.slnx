@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_作用域与名字可见性/01_作用域与名字可见性.vcxproj" Id="942e7cf8-726c-4c1e-8614-3d987df84a3a" />
+  <Project Path="02_存储期与生命周期/02_存储期与生命周期.vcxproj" Id="912d9453-0cf8-4519-ba3d-99b0f062b1da" />
+  <Project Path="03_自动对象生命周期/03_自动对象生命周期.vcxproj" Id="bd8261c4-b20b-4455-a434-61809ebe310b" />
+  <Project Path="04_静态与线程存储期/04_静态与线程存储期.vcxproj" Id="cab56e98-b0bd-42c0-bf6d-46fd56f9384f" />
+  <Project Path="05_生命周期错误分析/05_生命周期错误分析.vcxproj" Id="c2037121-5347-4d57-9971-d5c3d30ef0b8" />
+  <Project Path="06_代码题_修复五个生命周期错误/06_代码题_修复五个生命周期错误.vcxproj" Id="ef49a2b3-2913-4347-a129-cb50205e92f4" />
+  <Project Path="07_代码题_设备采样统计器/07_代码题_设备采样统计器.vcxproj" Id="f211e7d7-3352-46f8-891a-47bad15906cc" />
+  <Project Path="08_LeetCode_704_Binary_Search/08_LeetCode_704_Binary_Search.vcxproj" Id="e37859a1-15cf-4c8f-9964-e7dd106da64f" />
+</Solution>
