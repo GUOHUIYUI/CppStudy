@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="01_课堂实验_数组现代化/01_课堂实验_数组现代化.vcxproj" Id="c027ac0c-c99b-41b5-8c27-5e93852cf4f3" />
+  <Project Path="02_代码题_替换负数/02_代码题_替换负数.vcxproj" Id="d5a78347-01de-4e0e-92c0-49d9491ff80a" />
+  <Project Path="03_代码题_固定采样窗口统计/03_代码题_固定采样窗口统计.vcxproj" Id="1d366625-6e4b-4e2d-b781-df64ef1ee261" />
+  <Project Path="04_LeetCode_977_Squares_of_a_Sorted_Array/04_LeetCode_977_Squares_of_a_Sorted_Array.vcxproj" Id="9ac0e014-cd4a-4c3c-834f-efaea6d0ab1e" />
+</Solution>
