@@ -14,7 +14,7 @@ struct DeviceHandle {
 	bool status;
 };
 
-bool makeOffline(DeviceHandle &handle)
+void makeOffline(DeviceHandle &handle)
 {
 	handle.status = false;
 }
