@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_强类型枚举实验/01_强类型枚举实验.vcxproj" Id="4ea3c5dc-1e1d-4477-8efc-ac712ef81221" />
+  <Project Path="02_设备状态与错误码/02_设备状态与错误码.vcxproj" Id="993ebea2-acdf-4daf-a0fc-b627bf312122" />
+  <Project Path="03_LeetCode_14_Longest_Common_Prefix/03_LeetCode_14_Longest_Common_Prefix.vcxproj" Id="ffce8624-e896-44da-88fa-cfce1fb3a123" />
+</Solution>

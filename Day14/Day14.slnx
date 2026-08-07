@@ -1,0 +1,5 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_命令行设备配置器_v2/01_命令行设备配置器_v2.vcxproj" Id="df0632fe-46ec-4016-9eb9-632c8ea21441" />
+  <Project Path="02_LeetCode_383_Ransom_Note/02_LeetCode_383_Ransom_Note.vcxproj" Id="0c075554-f2c4-403c-91f2-a42c81af1442" />
+</Solution>
