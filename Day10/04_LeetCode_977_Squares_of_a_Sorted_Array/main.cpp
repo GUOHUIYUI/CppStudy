@@ -13,11 +13,17 @@
 
 */
 
+
+/*
+    思路：数组本身有序，平方后最大值只可能在数组两端出现
+            使用两个指针指向数组的两端，比较绝对值较大的值平方后即为最大值，插入到目标数组的末尾，然后移动对应的指针
+
+*/
 class Solution {
 public:
     std::vector<int> sortedSquares(std::vector<int> &nums) {
-        int count = nums.size();
-        std::vector<int> nums1(count);
+        
+        std::vector<int> result(nums.size());
         int head{};
         //size_t tail = nums.size() - 1;   
         //size_t index = nums.size() - 1;
@@ -27,16 +33,16 @@ public:
         {
             if (std::abs(nums[head]) <= std::abs(nums[tail]))
             {
-                nums1[index--] = nums[tail] * nums[tail];
+                result[index--] = nums[tail] * nums[tail];
                 tail--;
             }
             else if (std::abs(nums[head]) > std::abs(nums[tail]))
             {
-                nums1[index--] = nums[head] * nums[head];
+                result[index--] = nums[head] * nums[head];
                 head++;
             }
         }
-        return nums1;
+        return result;
 
     }
 };
