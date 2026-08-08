@@ -238,10 +238,24 @@ bool parseCommand(std::string_view line, std::string& name, std::string& argumen
 ## 快速自测
 
 1. C字符串如何确定文本终点？
+
+   通过终止字符'\0'
+
 2. `std::string`复制后，新对象是否依赖原对象继续存活？
+
+   不依赖，复制后为独立对象
+
 3. `std::string_view`是否拥有字符？
+
+   不拥有
+
 4. `find`找不到分隔符时返回什么？
+
+   std::string::npos
+
 5. 为什么不能返回指向局部`std::string`的视图？
+
+   因为局部变量在函数结束时就会销毁
 
 ## 今日小结
 
@@ -260,4 +274,4 @@ bool parseCommand(std::string_view line, std::string& name, std::string& argumen
 - 训练目标：使用双指针原地交换字符
 - 三级提示：[algorithms/day-011.md](../algorithms/day-011.md)
 
-下一课将使用`enum class`表达有限状态与错误码，减少宏常量和任意整数混用。
+下一课将使用`enum class`表达有限状态与错误码，减少宏常量和任意整数混用。890
