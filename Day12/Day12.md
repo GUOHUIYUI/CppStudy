@@ -84,7 +84,7 @@ std::string_view toString(DeviceState state)
     case DeviceState::idle: return "idle";
     case DeviceState::running: return "running";
     case DeviceState::fault: return "fault";
-    }
+    }，
     return "unknown";
 }
 
@@ -167,9 +167,9 @@ enum class Permission : std::uint8_t {
 
 判断下面哪些适合普通枚举，哪些可能适合位标志，并说明原因：
 
-- 连接状态：未连接、连接中、已连接；
-- 权限：可读、可写、可执行；
-- 错误原因：超时、校验失败、参数非法。
+- 连接状态：未连接、连接中、已连接；适合普通枚举，因为状态是互斥的
+- 权限：可读、可写、可执行； 适合位标志，因为状态之间可以组合
+- 错误原因：超时、校验失败、参数非法。 适合普通枚举，因为状态互斥
 
 ## 重要错误提醒
 
@@ -198,10 +198,24 @@ bool canStart(DeviceState state);
 ## 快速自测
 
 1. 为什么`enum class`比一组宏更不容易混用？
+
+   因为enum class在使用时必须显式增加类型
+
 2. 枚举值`running`为什么通常要写成`DeviceState::running`？
+
+   访问枚举值时必须加作用域
+
 3. 如何取得枚举对应的底层整数？
+
+   使用显示类型转换static_cast<int>()
+
 4. 什么时候需要指定`std::uint8_t`底层类型？
+
+   需要与协议字段或者寄存器宽度匹配时
+
 5. 设备当前状态适合做位标志吗？
+
+   不适合
 
 ## 今日小结
 
