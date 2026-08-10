@@ -3,4 +3,6 @@
   <Project Path="01_封装与成员函数实验/01_封装与成员函数实验.vcxproj" Id="d9296615-d5e6-4877-940f-8f2ab44a1331" />
   <Project Path="02_设备配置类/02_设备配置类.vcxproj" Id="3367de93-eaf7-4296-855a-9a9de9221332" />
   <Project Path="03_LeetCode_392_Is_Subsequence/03_LeetCode_392_Is_Subsequence.vcxproj" Id="7fe9fda3-79b9-4c77-a5eb-b67ea5761333" />
+  <Project Path="一、struct和class都能有函数/一、struct和class都能有函数.vcxproj" Id="119e3a18-01c4-499d-91c6-1ec5aaf48276" />
+  <Project Path="二、需要规则时使用封装/二、需要规则时使用封装.vcxproj" Id="a556c4ec-d9cc-435b-94c2-68889fc98f76" />
 </Solution>
