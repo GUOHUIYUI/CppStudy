@@ -1,4 +1,4 @@
-SHOW
+﻿HSHOW
 NAME controller
 RATE 500
 STATE IDLE
