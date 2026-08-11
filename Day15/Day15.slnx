@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_多文件函数拆分/01_多文件函数拆分.vcxproj" Id="89c4a48f-8acd-40b9-a339-8be12b541501" />
+  <Project Path="02_ODR与链接错误实验/02_ODR与链接错误实验.vcxproj" Id="950f81b6-2df7-4839-b244-c90505971502" />
+  <Project Path="03_LeetCode_350_Intersection_of_Two_Arrays_II/03_LeetCode_350_Intersection_of_Two_Arrays_II.vcxproj" Id="fdf3ed49-dcf6-47d1-8c80-6878ad091503" />
+</Solution>
