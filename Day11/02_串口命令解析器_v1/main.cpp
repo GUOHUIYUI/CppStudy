@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <string_view>
 
@@ -18,7 +18,7 @@ int main()
 	std::cout << ((parseCommand("SET RATE 100", name, argument) == true) ? "TRUE" : "FALSE") << "name: " << name << " argument: " << argument << std::endl;
 	name.clear();
 	argument.clear();
-	std::cout << ((parseCommand("STOP", name, argument) == false) ? "TRUE" : "FALSE") << "name: " << name << " argument: " << argument << std::endl;
+	std::cout << ((parseCommand("STOP", name, argument) == true) ? "TRUE" : "FALSE") << "name: " << name << " argument: " << argument << std::endl;
 	name.clear();
 	argument.clear();
 	std::cout << ((parseCommand("dasguidghqiu wghdiugsaidugiauqwtdgiuag diuabiwghfdiuawyteiaugdiastgdgfuawigeiudaydghiauw", name, argument) == false) ? "TRUE" : "FALSE") << "name: " << name << " argument: " << argument << std::endl;
@@ -35,7 +35,7 @@ bool parseCommand(std::string_view line, std::string& name, std::string& argumen
 	const std::size_t separator{ line.find(' ') };
 	if (separator == std::string::npos)
 	{
-		if (line == "START" || line == "RUN" || line == "SET")
+		if (line == "START" || line == "STOP" || line == "SET")
 		{
 			name = line;
 			argument = "";
@@ -47,7 +47,7 @@ bool parseCommand(std::string_view line, std::string& name, std::string& argumen
 	}
 	else {
 		std::string tmp{ line.substr(0, separator) };
-		if (tmp == "START" || tmp == "RUN" || tmp == "SET")
+		if (tmp == "START" || tmp == "STOP" || tmp == "SET")
 		{
 			name = tmp;
 			argument = line.substr(separator + 1);

@@ -39,8 +39,8 @@ public:
 		return sampleRate_;
 	}
 private:
-    std::string name_;
-    int sampleRate_;
+	std::string name_{"dev"};
+	int sampleRate_{100};
     DeviceState state_ { DeviceState::offline };
 };
 int main()
@@ -51,7 +51,7 @@ int main()
     std::cout << config.SetName("") << ' '
         << config.GetName() << '\n';
 
-    std::cout << config.SetName("1234567890123456") << ' '
+    std::cout << config.SetName("12345678901234561") << ' '
         << config.GetName() << '\n';
 
     std::cout << config.SetRate(500) << ' '

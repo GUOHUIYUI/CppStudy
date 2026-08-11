@@ -28,7 +28,7 @@ public:
 	}
 	bool setRate(int rate)
 	{
-		if (rate < 0 || rate>1000)return false;
+		if (rate <= 0 || rate > 1000)return false;
 		rate_ = rate;
 		return true;
 	}
@@ -74,7 +74,7 @@ bool parseRate(std::string_view text, int &rate)
 		if (value > 1000) return false;
 	}
 
-	if (value > 0 && value < 1000)
+	if (value > 0 && value <= 1000)
 	{
 		rate = value;
 		return true;
@@ -87,25 +87,25 @@ std::string DeviceStateToStr(DeviceState state)
 {
 	switch (state)
 	{
-	case DeviceState::idle: return "idle";
-	case DeviceState::offline:return "offline";
-	case DeviceState::running: return "running";
-	default: return "unknown";
+	case DeviceState::idle: return "IDLE";
+	case DeviceState::offline:return "OFFLINE";
+	case DeviceState::running: return "RUNNING";
+	default: return "UNKNOW";
 	}
 }
 bool StrToDeviceState(std::string_view str, DeviceState &state)
 {
-	if (str == "idle")
+	if (str == "IDLE")
 	{
 		state = DeviceState::idle;
 		return true;
 	}
-	if (str == "offline")
+	if (str == "OFFLINE")
 	{
 		state = DeviceState::offline;
 		return true;
 	}
-	if (str == "running")
+	if (str == "RUNNING")
 	{
 		state = DeviceState::running;
 		return true;
@@ -120,7 +120,7 @@ std::string getLine()
 	return line;
 }
 
-void CommandComplier(std::string_view str, DeviceConfig &device)
+CommandResult CommandComplier(std::string_view str, DeviceConfig &device)
 {
 	std::string command{};
 	std::string value{};
@@ -139,13 +139,15 @@ void CommandComplier(std::string_view str, DeviceConfig &device)
 		std::cout << "Name: " << device.name() << "\n";
 		std::cout << "Rate: " << device.rate() << "\n";
 		std::cout << "State: " << DeviceStateToStr(device.state()) << "\n";
+		return CommandResult::ok;
 	}
 	else if (command == "NAME")
 	{
 		if (!device.setName(value))
 		{
-			std::cout << "修改name失败\n";
+			return  CommandResult::invalidArgument;
 		}
+		return CommandResult::ok;
 	}
 	else if (command == "RATE")
 	{
@@ -153,16 +155,22 @@ void CommandComplier(std::string_view str, DeviceConfig &device)
 		if (parseRate(value, rate))
 		{
 			device.setRate(rate);
+			return CommandResult::ok;
 		}
 		else {
-			std::cout << "RATE不合法\n";
+			return  CommandResult::invalidArgument;
 		}
 	}
 	else if (command == "STATE")
 	{
 		DeviceState state{};
 		if (StrToDeviceState(value, state))
-		device.setState(state);
+		{
+			device.setState(state);
+			return CommandResult::ok;
+		}
+		return  CommandResult::invalidArgument;
+
 	}
 	else if (command == "SAMPLES")
 	{
@@ -179,6 +187,14 @@ void CommandComplier(std::string_view str, DeviceConfig &device)
 		std::cout << "max: " << max << "\n";
 		std::cout << "min: " << min << "\n";
 		std::cout << "avg: " << avg << "\n";
+		return  CommandResult::ok;
+	}
+	else if (command == "")
+	{
+		return  CommandResult::emptyInput;
+	}
+	else {
+		return  CommandResult::unknownCommand;
 	}
 
 }
@@ -187,11 +203,11 @@ int main()
 	DeviceConfig device{};
 	std::cout << "Enter command: ";
 	std::string line{};
-	while (1)
+	CommandResult commandState{};
+	while (std::getline(std::cin, line))
 	{
-		line = getLine();
-		if (line == "EXIT") break;
-		CommandComplier(line, device);
+		if (line == "QUIT") break;
+		commandState = CommandComplier(line, device);
 	}
 	return 0;
 }

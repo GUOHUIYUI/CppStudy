@@ -1,4 +1,4 @@
-#include <string>
+﻿#include <string>
 #include <vector>
 
 
@@ -13,6 +13,10 @@ public:
         {
             for (int j = 0;j < strs.size();j++)
             {
+                if (i >= strs[j].size())
+                {
+                    return str;
+                }
                 if (strs[0][i] != strs[j][i])
                     return str;
             }

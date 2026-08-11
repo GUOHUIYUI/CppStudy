@@ -1,4 +1,4 @@
-#include <cstring>
+﻿#include <cstring>
 #include <iostream>
 #include <string>
 #include <string_view>
@@ -36,3 +36,4 @@ void test1()
     //因为sizeof回答的是数组占据多少字节，和字符长度无关
     cout << "capacity: " << sizeof(command) << endl;  //8
     cout << "length: " << strlen(command) << endl;     //6
+}
