@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_命名空间与多文件/01_命名空间与多文件.vcxproj" Id="0c45ac7f-db35-43fc-a6eb-4a739c741601" />
+  <Project Path="02_配置模块与内部链接/02_配置模块与内部链接.vcxproj" Id="74333ab1-e6e9-4120-8ad6-379116bc1602" />
+  <Project Path="03_LeetCode_169_Majority_Element/03_LeetCode_169_Majority_Element.vcxproj" Id="2580d58a-03b0-4f5d-8b57-49accf471603" />
+</Solution>
