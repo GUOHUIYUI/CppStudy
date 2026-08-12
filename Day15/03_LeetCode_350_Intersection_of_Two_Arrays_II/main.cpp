@@ -9,7 +9,7 @@ public:
 		std::vector<int> nums;
 		std::sort(nums1.begin(),nums1.end());
 		std::sort(nums2.begin(), nums2.end());
-		int nums1_index{}, nums2_index{}, insert{};
+		std::size_t nums1_index{}, nums2_index{};
 		while (nums1_index < nums1.size() && nums2_index < nums2.size())
 		{
 			if (nums1[nums1_index] == nums2[nums2_index])
@@ -30,9 +30,5 @@ public:
 
 int main()
 {
-	std::vector<int> nums1{ 1,2,3,4 };
-	std::vector<int> nums2{ 1,2,3,4 };
-	Solution solu;
-	solu.intersect(nums1, nums2);
 	return 0;
 }

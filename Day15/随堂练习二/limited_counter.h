@@ -6,7 +6,7 @@ public:
 	bool increament();
 	int value()const;
 private:
-	int value_;
+	int value_{};
 };
 
 #endif
