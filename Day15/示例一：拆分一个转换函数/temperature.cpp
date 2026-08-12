@@ -1,6 +1,5 @@
-﻿#include "temperature.h"
+﻿#include"temperature.h"
 
-// 在这里定义转换函数。
 double celsiusToFahrenheit(double celsius)
 {
 	return celsius * 9.0 / 5.0 + 32.0;

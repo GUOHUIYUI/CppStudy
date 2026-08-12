@@ -1,6 +1,7 @@
-#ifndef DAY15_TEMPERATURE_H
+﻿#ifndef DAY15_TEMPERATURE_H
 #define DAY15_TEMPERATURE_H
 
 // 在这里声明转换函数。
-
+double celsiusToFahrenheit(double celsius);
+double fahrenheitToCelsius(double fahrenheit);
 #endif

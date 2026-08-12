@@ -205,8 +205,7 @@ int main()
 	std::string line{};
 	CommandResult commandState{};
 	while (std::getline(std::cin, line))
-	{
-		if (line == "QUIT") break;
+	{		if (line == "QUIT") break;
 		commandState = CommandComplier(line, device);
 	}
 	return 0;

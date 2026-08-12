@@ -3,4 +3,6 @@
   <Project Path="01_多文件函数拆分/01_多文件函数拆分.vcxproj" Id="89c4a48f-8acd-40b9-a339-8be12b541501" />
   <Project Path="02_ODR与链接错误实验/02_ODR与链接错误实验.vcxproj" Id="950f81b6-2df7-4839-b244-c90505971502" />
   <Project Path="03_LeetCode_350_Intersection_of_Two_Arrays_II/03_LeetCode_350_Intersection_of_Two_Arrays_II.vcxproj" Id="fdf3ed49-dcf6-47d1-8c80-6878ad091503" />
+  <Project Path="示例一：拆分一个转换函数/示例一：拆分一个转换函数.vcxproj" Id="6707ae5f-93b4-45b1-9d37-54efe27eac58" />
+  <Project Path="随堂练习二/随堂练习二.vcxproj" Id="304bcb3c-dc91-41c3-ab5d-de8bee6237e7" />
 </Solution>
