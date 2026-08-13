@@ -376,10 +376,15 @@ device::command::processCommand(...)
 ## 快速自测
 
 1. `device::config::DeviceConfig`中的两个`::`表达什么？
+   作用域解析运算符
 2. 同一个命名空间能否在多个文件中重复打开？
+   可以
 3. using声明和using指令的影响范围有什么区别？
+   using引入一个声明，using指令引入整个命名空间
 4. 为什么公共头文件不应写`using namespace std;`？
+   因为会让后续很多命名参与查找
 5. 匿名命名空间中的辅助函数能否供另一个`.cpp`调用？
+   不能
 
 ## 今日小结
 

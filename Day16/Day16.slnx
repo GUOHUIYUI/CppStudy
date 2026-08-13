@@ -3,4 +3,6 @@
   <Project Path="01_命名空间与多文件/01_命名空间与多文件.vcxproj" Id="0c45ac7f-db35-43fc-a6eb-4a739c741601" />
   <Project Path="02_配置模块与内部链接/02_配置模块与内部链接.vcxproj" Id="74333ab1-e6e9-4120-8ad6-379116bc1602" />
   <Project Path="03_LeetCode_169_Majority_Element/03_LeetCode_169_Majority_Element.vcxproj" Id="2580d58a-03b0-4f5d-8b57-49accf471603" />
+  <Project Path="示例一 同名函数属于不同模块/示例一 同名函数属于不同模块.vcxproj" Id="c8e76df4-313f-4568-80ea-939c665f5146" />
+  <Project Path="随堂练习2/随堂练习2.vcxproj" Id="f9de0d14-9dd1-48a4-8ac5-a6d93d060631" />
 </Solution>

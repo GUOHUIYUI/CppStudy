@@ -1,8 +1,15 @@
-#include "device_config.h"
-
-#include <iostream>
-
+﻿#include "device_config.h"
+#include<iostream>
 int main()
 {
-    return 0;
+	device::config::DeviceConfig device{};
+	std::cout << "Enter command: ";
+	std::string line{};
+	CommandResult commandState{};
+	while (std::getline(std::cin, line))
+	{
+		if (line == "QUIT") break;
+		commandState = CommandComplier(line, device);
+	}
+	return 0;
 }

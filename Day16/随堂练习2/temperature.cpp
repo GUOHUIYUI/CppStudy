@@ -1,6 +1,5 @@
-﻿#include "temperature.h"
+﻿#include"temperature.h"
 
-// 在与头文件相同的命名空间中定义转换函数。
 namespace units::temperature {
 	double celsiusToFahrenheit(double celsius)
 	{
