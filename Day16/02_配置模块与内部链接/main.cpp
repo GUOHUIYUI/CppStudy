@@ -5,11 +5,11 @@ int main()
 	device::config::DeviceConfig device{};
 	std::cout << "Enter command: ";
 	std::string line{};
-	CommandResult commandState{};
+	device::config::CommandResult commandState{};
 	while (std::getline(std::cin, line))
 	{
 		if (line == "QUIT") break;
-		commandState = CommandComplier(line, device);
+		commandState = device::config::CommandComplier(line, device);
 	}
 	return 0;
 }
