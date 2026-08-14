@@ -3,4 +3,5 @@
   <Project Path="01_显式解析结果/01_显式解析结果.vcxproj" Id="91c420dd-e7fb-4710-8c53-18cbebde1701" />
   <Project Path="02_配置解析错误详情/02_配置解析错误详情.vcxproj" Id="72863ff8-162b-44b8-a373-4ccf403b1702" />
   <Project Path="03_LeetCode_268_Missing_Number/03_LeetCode_268_Missing_Number.vcxproj" Id="a243a91d-a983-43ce-b76a-62adcf571703" />
+  <Project Path="示例一/示例一.vcxproj" Id="541cd846-5d99-4dcb-bda5-0dce1e197ee8" />
 </Solution>
