@@ -1,0 +1,5 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="device-config-cli/device-config-cli.vcxproj" Id="a27d7299-5c76-49f3-acb9-9873237c2001" />
+  <Project Path="02_LeetCode_69_Sqrt_x/02_LeetCode_69_Sqrt_x.vcxproj" Id="b9734bd9-3899-4e5f-a59f-b6795b942002" />
+</Solution>
