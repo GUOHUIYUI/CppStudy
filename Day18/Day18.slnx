@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_构造与初始化列表/01_构造与初始化列表.vcxproj" Id="7c52c950-5243-44eb-899d-52032b6d1801" />
+  <Project Path="02_合法配置对象/02_合法配置对象.vcxproj" Id="943a42b5-c8d9-4f13-9894-6b808fdd1802" />
+  <Project Path="03_LeetCode_136_Single_Number/03_LeetCode_136_Single_Number.vcxproj" Id="f6332152-ca96-483e-af91-c42a71791803" />
+</Solution>
