@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_编译链接故障诊断/01_编译链接故障诊断.vcxproj" Id="127fcdbb-c983-4281-ac8b-313c42851901" />
+  <Project Path="02_生命周期与接口歧义/02_生命周期与接口歧义.vcxproj" Id="edc752d2-80b9-4f01-aeee-d531e3351902" />
+  <Project Path="03_LeetCode_66_Plus_One/03_LeetCode_66_Plus_One.vcxproj" Id="873fd9fd-a3f4-4649-9a35-9758f3bf1903" />
+</Solution>
