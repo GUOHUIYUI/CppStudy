@@ -3,4 +3,6 @@
   <Project Path="01_构造与初始化列表/01_构造与初始化列表.vcxproj" Id="7c52c950-5243-44eb-899d-52032b6d1801" />
   <Project Path="02_合法配置对象/02_合法配置对象.vcxproj" Id="943a42b5-c8d9-4f13-9894-6b808fdd1802" />
   <Project Path="03_LeetCode_136_Single_Number/03_LeetCode_136_Single_Number.vcxproj" Id="f6332152-ca96-483e-af91-c42a71791803" />
+  <Project Path="示例一/示例一.vcxproj" Id="a1274570-a113-49a9-9863-7e89d8f1310c" />
+  <Project Path="示例二/示例二.vcxproj" Id="33ed19fb-9dda-4321-aecd-755a3da3d653" />
 </Solution>
