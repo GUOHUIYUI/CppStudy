@@ -4,5 +4,6 @@
 
 int main()
 {
-    return 0;
+    average(2, 3);
+    return add(2,3);
 }
