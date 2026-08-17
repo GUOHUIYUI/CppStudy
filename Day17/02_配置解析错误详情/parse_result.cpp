@@ -116,7 +116,7 @@ namespace device::config {
 		}
 		if (command.empty())
 		{
-			return { CommandResult::emptyInput, "", "" };
+			return { CommandResult::emptyInput, "command", "input is empty" };
 		}
 		return { CommandResult::unknownCommand, command, "unknown command: " + command };
 	}

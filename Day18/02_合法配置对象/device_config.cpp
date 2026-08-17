@@ -1,4 +1,4 @@
-#include "device_config.h"
+﻿#include "device_config.h"
 
 // 在这里实现DeviceConfig。
 DeviceConfig::DeviceConfig(std::string name, int rate, DeviceState status) 
@@ -11,7 +11,7 @@ status_{ status }
 	{
 		throw std::invalid_argument{ "name must.size() be1-16 " };
 	}
-	if (rate_ < 0 || rate_>1000)
+	if (rate_ < 1 || rate_>1000)
 	{
 		throw std::invalid_argument{ "rate must be 0-1000 " };
 	}

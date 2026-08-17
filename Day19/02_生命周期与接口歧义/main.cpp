@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 
 
@@ -47,7 +47,7 @@ void connect(int channel);
 void connect(const char* address);
 int main()
 {
-    connect(0);
-    connect(nullptr);
+    //connect(0);
+    //connect(nullptr);
     return 0;
 }
