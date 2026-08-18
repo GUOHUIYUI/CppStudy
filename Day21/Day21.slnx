@@ -1,0 +1,5 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Project Path="01_阶段独立实现/01_阶段独立实现.vcxproj" Id="6d8c1d50-ab9c-49e6-81e2-9e29bf342101" />
+  <Project Path="02_LeetCode_118_Pascals_Triangle/02_LeetCode_118_Pascals_Triangle.vcxproj" Id="9aac9c65-086a-42fb-96f1-5d4757252102" />
+</Solution>
