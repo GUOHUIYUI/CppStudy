@@ -1,11 +1,21 @@
 ﻿#include "device_config.h"
 
+#include <stdexcept>
+
 using namespace device;
 
 // 在这里实现DeviceConfig。
 device::DeviceConfig::DeviceConfig(int rate, std::string_view name, DeviceState state)
 	: rate_(rate), name_(name), state_(state)
 {
+	if (rate < 1 || rate > 1000)
+	{
+		throw std::invalid_argument("invalid rate");
+	}
+	if (name.empty() || name.size() > 16)
+	{
+		throw std::invalid_argument("invalid name");
+	}
 }
 
 CommandInfo device::DeviceConfig::SetRate(int rate)
@@ -39,7 +49,7 @@ int device::DeviceConfig::GetRate() const
 	return rate_;
 }
 
-std::string device::DeviceConfig::GetName() const
+const std::string& device::DeviceConfig::GetName() const
 {
 	return name_;
 }
